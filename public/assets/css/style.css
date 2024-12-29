@@ -56,8 +56,8 @@ body {
   border-bottom-left-radius: 30px;
 }
 
-.navigation ul li:hover,
-.navigation ul li.hovered {
+.navigation ul li:hover, 
+.navigation ul li.active {
   background-color: var(--white);
 }
 
@@ -75,7 +75,7 @@ body {
   color: var(--white);
 }
 .navigation ul li:hover a,
-.navigation ul li.hovered a {
+.navigation ul li.active a{
   color: var(--blue);
 }
 
@@ -103,7 +103,7 @@ body {
 
 /* --------- curve outside ---------- */
 .navigation ul li:hover a::before,
-.navigation ul li.hovered a::before {
+.navigation ul li.active a::before {
   content: "";
   position: absolute;
   right: 0;
@@ -116,7 +116,7 @@ body {
   pointer-events: none;
 }
 .navigation ul li:hover a::after,
-.navigation ul li.hovered a::after {
+.navigation ul li.active a::after {
   content: "";
   position: absolute;
   right: 0;
@@ -275,7 +275,17 @@ body {
   width: 100%;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
-  border: 1px solid var(--blue);
+  /* border: 1px solid var(--blue); */
+}
+
+/* ================== General Index Details List ============== */
+.details-index {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-gap: 30px;
+  /* margin-top: 10px; */
 }
 
 /* ================== Order Details List ============== */
@@ -289,7 +299,7 @@ body {
   /* margin-top: 10px; */
 }
 
-.details .recentOrders {
+.recentOrders {
   position: relative;
   display: grid;
   min-height: 500px;
@@ -299,7 +309,8 @@ body {
   border-radius: 20px;
 }
 
-.details .cardHeader {
+.cardHeader
+{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -317,35 +328,35 @@ body {
   border-radius: 6px;
 }
 
-.details table {
+ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
 }
-.details table thead td {
+ table thead td {
   font-weight: 600;
 }
-.details .recentOrders table tr {
+ .recentOrders table tr {
   color: var(--black1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.details .recentOrders table tr:last-child {
+ .recentOrders table tr:last-child {
   border-bottom: none;
 }
-.details .recentOrders table tbody tr:hover {
+ .recentOrders table tbody tr:hover {
   background: var(--blue);
   color: var(--white);
 }
-.details .recentOrders table tr td {
+ .recentOrders table tr td {
   padding: 10px;
 }
-.details .recentOrders table tr td:last-child {
+ .recentOrders table tr td:last-child {
   text-align: end;
 }
-.details .recentOrders table tr td:nth-child(2) {
+ .recentOrders table tr td:nth-child(2) {
   text-align: end;
 }
-.details .recentOrders table tr td:nth-child(3) {
+ .recentOrders table tr td:nth-child(3) {
   text-align: center;
 }
 .status.delivered {

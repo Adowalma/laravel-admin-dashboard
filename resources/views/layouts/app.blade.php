@@ -8,6 +8,8 @@
     <title>Responsive Admin Dashboard | Korsat X Parmaga</title>
     <!-- ======= Styles ====== -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    @stack('css')
     
 </head>
 
@@ -28,7 +30,7 @@
 
     <!-- =========== Scripts =========  -->
     <script src="assets/js/main.js"></script>
-
+    
     @stack('js')
 
     <!-- ====== ionicons ======= -->

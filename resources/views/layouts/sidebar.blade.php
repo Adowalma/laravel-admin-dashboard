@@ -18,7 +18,7 @@
             </a>
         </li>
 
-        <li class="@if ($activePage== 'customers')active @endif ">
+        <li class="@if ($activePage== 'customers')active @endif">
             <a href="/customers">
                 <span class="icon">
                     <ion-icon name="people-outline"></ion-icon>
@@ -27,7 +27,7 @@
             </a>
         </li>
 
-        <li>
+        <li >
             <a href="#">
                 <span class="icon">
                     <ion-icon name="chatbubble-outline"></ion-icon>
@@ -36,8 +36,8 @@
             </a>
         </li>
 
-        <li>
-            <a href="#">
+        <li class="@if ($activePage== 'help')active @endif">
+            <a href="/help">
                 <span class="icon">
                     <ion-icon name="help-outline"></ion-icon>
                 </span>
@@ -45,8 +45,8 @@
             </a>
         </li>
 
-        <li>
-            <a href="#">
+        <li class="@if ($activePage== 'settings')active @endif">
+            <a href="/settings">
                 <span class="icon">
                     <ion-icon name="settings-outline"></ion-icon>
                 </span>
